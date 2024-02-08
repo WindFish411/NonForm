@@ -1,0 +1,77 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Imaginary Form</title>
+    <link rel='stylesheet' href='style.css'/>
+  </head>
+  <body>
+<div id="outerContainer">
+
+<div class = "halfScreen" id="empty1"></div>
+
+
+<div class="halfScreen">
+    <div class="leftScreen">
+        <img src="ducks.jpg" alt="ducks">
+        <div class="overlayBand">
+            <div id="overlayText">
+                <img class ="ducks" src="ducklogo.jpg" alt="Company Logo">
+                <p class="ducks">Duck Superiority</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<div class="halfScreen">
+    <div class = "rightContainer">
+        <div class = "rightItem" id="topContainer">
+            <p>Ducks are superior to you and deep inside, you know it. Ask yourself, can you walk? 
+                Sure, but can you swim? Maybe yes still, but, can you fly? No, you can't. How beautiful 
+                is your plumage? Do you sport the drab colors of humanity? Do you long for the imperious 
+                feathers of the majestic mallard? 
+                <br>
+                <br>
+                Yes. You do. Sign up today. </p>
+        </div>
+
+        <div class = "rightItem" id="middleContainer">
+            <p id="learn">Learn how to be more like a duck today!</p>
+
+            <form action='' method='get' class='speaker-form'>
+            <div class='form-row'>
+                <label for='first-name'>First Name</label>
+                <input id='first-name' name='first-name' type='text' placeholder='Billybob'/>
+                <label for='last-name'>Last Name</label>
+                <input id='last-name' name='last-name' type='text' placeholder='Smith'/>
+            </div>  
+
+            <div class='form-row'>
+                <label for='email'>Email</label>
+                <input id='email' name='email' type='email' placeholder='joe@example.com'/>
+                <label for='phone'>Phone Number</label>
+                <input id='phone' name='phone' type='tel' placeholder='555-555-5555' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+            </div>
+            <div class='form-row'>
+                <label for='password'>Password</label>
+                <input id='password' name='password' type='password' placeholder='Enter your password'/>
+                <label for='password'>Confirm Password</label>
+                <input id='password' name='password' type='password' placeholder='Enter your password'/>
+            </div>
+            </form>
+        </div>
+
+        <div class = "rightItem" id="bottomContainer">
+            <button class="createAccount">Create Account</button>
+            <p>Already have an account? Log in</p>
+        </div>
+    </div>
+</div>
+
+<div class = "halfScreen" id="empty2"></div>
+
+</div>
+  </body>
+</html>

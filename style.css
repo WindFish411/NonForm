@@ -1,0 +1,186 @@
+@font-face{
+    font-family: Norse-Bold;
+    src: url('Norse-Bold.otf') format('opentype');
+    
+}
+@font-face{
+    font-family: Honk;
+    src: url('./Honk/static/Honk-Regular.ttf')
+}
+
+body{
+    margin: 0px; 
+    border: 0px;
+}
+
+#outerContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    
+}
+
+.halfScreen{
+flex: 1; 
+border: 1px solid black; 
+position: relative;
+}
+
+.halfScreen img {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    object-fit: fill; 
+  }
+
+  .halfScreen:nth-child(2) {
+    flex-basis: 25%;
+    flex-grow: 1;
+  }
+
+
+  .halfScreen:nth-child(3) {
+    flex-basis: 25%;
+    flex-grow: 1;
+  }
+
+.overlayBand{
+    position: absolute;
+    top: 25%;
+    left: 0%;
+    width: 100%;
+    height: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
+    }
+
+#overlayText{
+    font-family: Norse-Bold;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.ducks{
+    text-align: center;
+    justify-content: center;
+    margin: 0px;
+    font-size: 150%;
+}
+
+img[src="ducklogo.jpg"]{
+    margin-right: 10px;
+    width: 35%;
+    height: 35%;
+}
+
+.rightContainer{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    font-family: 'Honk', Arial, sans-serif;
+}
+
+.rightItem{
+    flex: 1; 
+}
+
+
+#topcontainer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 1em;
+    font-size: larger;
+}
+
+#topContainer,
+#bottomContainer{
+    background-color: rgb(155, 196, 157);
+}
+#learn{
+    padding-left: 26px;
+}
+
+#middleContainer{
+    position: relative;
+    background-color: rgb(250, 214, 97);
+    border: 10px;
+    border-color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+
+#middleContainer::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; /* Adjust the height of the shadowed border */
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity of the shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the shadow properties */
+
+}
+
+.leftScreen{
+    height: 100%;
+}
+
+
+
+form {
+    width: 400px;
+    padding-right: 5em;
+    padding-top: 2em;
+    padding-left: 1em;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    padding-right: 1em;
+  }
+  .form-row label {
+    width: 45%;
+  }
+  .form-row input {
+    width: 50%;
+    margin-right: 20px
+  }
+
+  #empty1,
+  #empty2{
+    background-color: black;
+  }
+
+  .createAccount{
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  #bottomContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1em;
+  font-size: larger;
+  }
