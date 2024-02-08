@@ -3,6 +3,7 @@
     <meta charset='UTF-8'/>
     <title>Imaginary Form</title>
     <link rel='stylesheet' href='style.css'/>
+    
   </head>
   <body>
 <div id="outerContainer">
@@ -56,7 +57,7 @@
             </div>
             <div class='form-row2'>
                 <label for='phone'>Phone Number</label>
-                <input id='phone' name='phone' type='tel' placeholder='555-555-5555' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+                <input id='phone' name='phone' type='tel' placeholder='555-555-5555' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter a valid number." required/>
             </div>
             <div class='form-row3'>
                 <label for='password'>Password</label>
@@ -66,12 +67,17 @@
                 <label for='password'>Confirm Password</label>
                 <input id='password' name='password' type='password' placeholder='Enter your password'/>
             </div>
+            <div id="smallContainer">
+                <button type="submit" id="createAccount">Create Account</button>
+                <p id="already">Already have an account? Log in</p>
+            </div>
             </form>
         </div>
 
         <div class = "rightItem" id="bottomContainer">
-            <button class="createAccount">Create Account</button>
-            <p>Already have an account? Log in</p>
+            
+            <p id="error" style="color: red; display: none;">Passwords do not match</p>
+            
         </div>
     </div>
 </div>
@@ -79,5 +85,6 @@
 <div class = "halfScreen" id="empty2"></div>
 
 </div>
+<script src="script.js"></script>
   </body>
 </html>

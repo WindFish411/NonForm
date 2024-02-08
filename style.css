@@ -175,7 +175,13 @@ form {
     background-color: black;
   }
 
-  .createAccount{
+#smallContainer{
+    font-family: Honk;
+    position: relative; 
+    top: 10em;
+}
+
+  #createAccount{
     background-color: green;
     color: white;
     padding: 10px 20px;
@@ -185,6 +191,8 @@ form {
     font-size: 16px;
   }
 
+
+
   #bottomContainer{
   display: flex;
   flex-direction: column;
@@ -192,4 +200,15 @@ form {
   justify-content: flex-start;
   padding: 1em;
   font-size: larger;
+  }
+
+
+  input:focus {
+    border: 2px solid darkgreen; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+  }
+
+  .invalid {
+    border: 2px solid red; /* Add red border for invalid input */
   }
