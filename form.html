@@ -41,7 +41,7 @@
         <div class = "rightItem" id="middleContainer">
             <p id="learn">Learn how to be more like a duck today!</p>
 
-            <form action='' method='get' class='inputForm'>
+            <form action='' method='get' class='inputForm' id='duckForm'>
             <div class='form-row1'>
                 <label for='first-name'>First Name</label>
                 <input id='first-name' name='first-name' type='text' placeholder='Billybob'/>
@@ -65,18 +65,20 @@
             </div>
             <div class='form-row3'>
                 <label for='password'>Confirm Password</label>
-                <input id='password' name='password' type='password' placeholder='Enter your password'/>
+                <input id='confirmPassword' name='confirmPassword' type='password' placeholder='Enter your password'/>
             </div>
+            <p id="error" style="color: red; display: none;">Passwords do not match</p>
             <div id="smallContainer">
                 <button type="submit" id="createAccount">Create Account</button>
                 <p id="already">Already have an account? Log in</p>
+              
             </div>
             </form>
         </div>
 
         <div class = "rightItem" id="bottomContainer">
             
-            <p id="error" style="color: red; display: none;">Passwords do not match</p>
+          
             
         </div>
     </div>

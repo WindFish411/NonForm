@@ -210,5 +210,12 @@ form {
   }
 
   .invalid {
-    border: 2px solid red; /* Add red border for invalid input */
+    border: 2px solid red; 
+  }
+
+  #error{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    font-style: italic;
+    font-weight: bolder;
   }
