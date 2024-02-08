@@ -218,4 +218,6 @@ form {
     font-size: larger;
     font-style: italic;
     font-weight: bolder;
+    position: absolute;
+    bottom: 1em;
   }
