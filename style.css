@@ -11,6 +11,7 @@
 body{
     margin: 0px; 
     border: 0px;
+    overflow: hidden;
 }
 
 #outerContainer{
@@ -138,20 +139,26 @@ img[src="ducklogo.jpg"]{
 
 
 
+
 form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 400px;
     padding-right: 5em;
-    padding-top: 2em;
     padding-left: 1em;
+    font-size: small;
   }
 
-  .form-row {
+  .form-row1,
+  .form-row2,
+  .form-row3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 15px;
-    padding: 10px;
     padding-right: 1em;
+    padding-top: 1em;
+   
   }
   .form-row label {
     width: 45%;
@@ -160,6 +167,8 @@ form {
     width: 50%;
     margin-right: 20px
   }
+
+
 
   #empty1,
   #empty2{
